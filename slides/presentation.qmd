@@ -1,0 +1,38 @@
+---
+title: "Project Title"
+subtitle: "Brief subtitle"
+author: "Author"
+date: today
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    preview-links: auto
+    embed-resources: true
+execute:
+  echo: false
+  warning: false
+---
+
+## Background
+
+- Context and motivation
+- Key question
+
+## Data & Methods
+
+- Dataset:
+- Key tools / pipeline:
+
+## Results
+
+![](../results/figs/placeholder.png){fig-alt="placeholder"}
+
+## Conclusions
+
+- Finding 1
+- Finding 2
+
+## Next steps
+
+-

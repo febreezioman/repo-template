@@ -56,6 +56,18 @@ What should be tackled next, and any open questions.
 | `docs/sessions/` | Per-session logs |
 | `docs/methods/` | Detailed notes on methods, tools, or pipelines |
 
+## Slides
+
+Presentations are authored in `slides/presentation.qmd` using Quarto revealjs format.  
+Render with:
+
+```bash
+cd slides && quarto render
+# Output goes to results/slides/presentation.html
+```
+
+Use `embed-resources: true` (already set) to produce a single self-contained HTML file that can be shared without dependencies.
+
 ## What to document in `docs/methods/`
 
 Create a file here whenever a method deserves more detail than fits in a session log:

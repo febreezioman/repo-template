@@ -22,6 +22,10 @@ envs/*/
 *.pyc
 __pycache__/
 
+# Quarto
+.quarto/
+slides/*_files/
+
 # Papers — track notes/index but not binary files
 # To version PDFs, use git-lfs: git lfs track "papers/**/*.pdf"
 papers/**/*.pdf
