@@ -14,8 +14,8 @@
 *.bw
 *.bigbed
 
-# Conda
-envs/
+# Conda environments (track .yml files, not installed env dirs)
+envs/*/
 
 # Jupyter
 .ipynb_checkpoints/
