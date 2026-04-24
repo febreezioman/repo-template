@@ -2,6 +2,10 @@
 
 Brief description of the project.
 
+## AI guidelines
+
+See [`AI.md`](AI.md) for the protocol any AI assistant should follow in this project (works with Claude, Codex, local models, etc.).
+
 ## Directory structure
 
 ```
@@ -13,6 +17,10 @@ results/
   slides/     # Presentation materials
 envs/         # Conda environment files (.yml)
 scripts/      # Analysis scripts
+docs/
+  overview.md     # Living project overview — updated each session
+  sessions/       # Per-session AI logs
+  methods/        # Detailed method / pipeline notes
 ```
 
 ## Setup
