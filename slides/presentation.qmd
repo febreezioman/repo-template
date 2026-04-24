@@ -9,10 +9,13 @@ format:
     slide-number: true
     preview-links: auto
     embed-resources: true
+    fig-align: center
 execute:
   echo: false
   warning: false
 ---
+
+# Section Title
 
 ## Background
 
@@ -26,7 +29,22 @@ execute:
 
 ## Results
 
-![](../results/figs/placeholder.png){fig-alt="placeholder"}
+![](../results/figs/placeholder.png){fig-alt="description of figure"}
+
+## Two-column layout
+
+::: columns
+::: {.column width="50%"}
+**Left panel**
+
+![](../results/figs/fig_left.png){fig-alt="left figure"}
+:::
+::: {.column width="50%"}
+**Right panel**
+
+![](../results/figs/fig_right.png){fig-alt="right figure"}
+:::
+:::
 
 ## Conclusions
 
@@ -36,3 +54,30 @@ execute:
 ## Next steps
 
 -
+
+---
+
+## Slide syntax reference
+
+```markdown
+# New section break
+
+## New slide title
+
+- Bullet
+- Bullet
+
+![](../results/figs/fig.png){fig-alt="alt text"}
+
+::: columns
+::: {.column width="50%"}
+Left
+:::
+::: {.column width="50%"}
+Right
+:::
+:::
+```
+
+**Render:** `cd slides && quarto render` → `results/slides/presentation.html`
+**Preview:** `cd slides && quarto preview` (live reload in browser)

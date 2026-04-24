@@ -56,17 +56,25 @@ What should be tackled next, and any open questions.
 | `docs/sessions/` | Per-session logs |
 | `docs/methods/` | Detailed notes on methods, tools, or pipelines |
 
+## Figures workflow
+
+Pipeline output directories are typically **gitignored** (large intermediate files, local only).
+
+When a figure is worth keeping:
+1. Copy it to `results/figs/`: `cp processing/<run>/figures/foo.png results/figs/`
+2. Reference it in `slides/presentation.qmd` as `../results/figs/foo.png`
+3. `results/figs/` and `results/slides/` are tracked by git — figures and rendered slides are versioned together.
+
 ## Slides
 
-Presentations are authored in `slides/presentation.qmd` using Quarto revealjs format.  
-Render with:
+Presentations are authored in `slides/presentation.qmd` using Quarto revealjs format.
 
 ```bash
 cd slides && quarto render
-# Output goes to results/slides/presentation.html
+# Output → results/slides/presentation.html
 ```
 
-Use `embed-resources: true` (already set) to produce a single self-contained HTML file that can be shared without dependencies.
+`embed-resources: true` (already set) produces a single self-contained HTML — shareable by email or link with no dependencies.
 
 ## What to document in `docs/methods/`
 
