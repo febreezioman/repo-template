@@ -22,6 +22,15 @@ envs/*/
 *.pyc
 __pycache__/
 
+# Papers — track notes/index but not binary files
+# To version PDFs, use git-lfs: git lfs track "papers/**/*.pdf"
+papers/**/*.pdf
+papers/**/*.PDF
+papers/**/*.docx
+papers/**/*.xlsx
+papers/**/*.pptx
+papers/**/*.zip
+
 # OS
 .DS_Store
 Thumbs.db
