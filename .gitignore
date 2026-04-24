@@ -1,0 +1,33 @@
+# Data and large files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bam.bai
+*.sam
+*.vcf
+*.vcf.gz
+*.bcf
+*.bed
+*.bigwig
+*.bw
+*.bigbed
+
+# Conda
+envs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.pyc
+__pycache__/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
