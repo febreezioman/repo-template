@@ -2,25 +2,23 @@
 
 Brief description of the project.
 
-## AI guidelines
-
-See [`AI.md`](AI.md) for the protocol any AI assistant should follow in this project (works with Claude, Codex, local models, etc.).
+See [`AI.md`](AI.md) for the AI assistant protocol used in this project.
 
 ## Directory structure
 
 ```
-raw/          # Raw, unmodified input data
-processing/   # Intermediate files generated during analysis
-out/          # Final output files
+raw/            # Raw input data (gitignored)
+out/            # Pipeline output (gitignored)
+processing/     # Intermediate files (gitignored)
 results/
-  figs/       # Figures and plots
-  slides/     # Presentation materials
-envs/         # Conda environment files (.yml)
-scripts/      # Analysis scripts
+  figs/         # Selected figures (tracked)
+envs/           # Conda environment files
+scripts/        # Analysis scripts
 docs/
-  overview.md     # Living project overview — updated each session
-  sessions/       # Per-session AI logs
-  methods/        # Detailed method / pipeline notes
+  overview.md          # Living project overview
+  analysis-roadmap.md  # Pending analyses and priorities
+  sessions/            # Per-session AI logs
+  methods/             # Method and pipeline notes
 ```
 
 ## Setup
@@ -30,6 +28,9 @@ conda env create -f envs/environment.yml
 conda activate <env-name>
 ```
 
-## Usage
+## Slides
 
-Describe how to run the analysis.
+```bash
+cd slides && quarto render
+# Output → results/slides/presentation.html
+```

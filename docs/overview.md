@@ -44,4 +44,8 @@ conda activate <env-name>
 
 ## Next steps
 
+See `docs/analysis-roadmap.md` for full priorities and experimental rationale.
+
+### Start here (next session)
+
 - [ ] ...
