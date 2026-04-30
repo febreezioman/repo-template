@@ -16,7 +16,7 @@ envs/           # Conda environment files
 scripts/        # Analysis scripts
 docs/
   overview.md          # Living project overview
-  analysis-roadmap.md  # Pending analyses and priorities
+  methods.md           # Analytical methods applied and planned
   sessions/            # Per-session AI logs
   methods/             # Method and pipeline notes
 ```

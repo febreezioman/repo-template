@@ -59,4 +59,5 @@ See `docs/commands.md` for figures workflow (copy to `results/figs/`, commit) an
 | `scripts/` | Analysis scripts |
 | `docs/overview.md` | Living project overview — update each session |
 | `docs/sessions/` | Per-session logs |
-| `docs/methods/` | Detailed notes on methods, tools, or pipelines |
+| `docs/methods.md` | Analytical methods applied and planned |
+| `docs/methods/` | PDFs and supplementary method files |
