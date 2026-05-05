@@ -12,8 +12,9 @@ This file applies to any AI assistant working in this project (Claude, Codex, lo
 ## During a session
 
 - `docs/overview.md` is the source of truth for project state.
-- Non-trivial methods and pipelines → document in `docs/methods/`.
-- Prefer reproducible steps: conda environments go in `envs/`, scripts in `scripts/`, raw data stays unmodified in `raw/`.
+- Non-trivial methods and pipelines → document in `docs/methods.md` (summary table) and `docs/methods/` (PDFs, supplementary notes).
+- Scripts go in `scripts/`; conda env spec in `envs/<env-name>.yml`.
+- Raw data stays unmodified in `raw/`; intermediate files in `processing/`; pipeline output in `out/`.
 
 ## End of every session
 
@@ -51,13 +52,17 @@ See `docs/commands.md` for figures workflow (copy to `results/figs/`, commit) an
 
 | Path | Purpose |
 |------|---------|
-| `raw/` | Original input data — never modified |
-| `processing/` | Intermediate files generated during analysis |
-| `out/` | Final output files |
-| `results/figs/` | Figures and plots — tracked |
-| `envs/` | Conda environment `.yml` files |
-| `scripts/` | Analysis scripts |
-| `docs/overview.md` | Living project overview — update each session |
-| `docs/sessions/` | Per-session logs |
+| `raw/` | Raw input data — gitignored, never modified |
+| `out/` | Pipeline output (e.g., aligners, callers) — gitignored |
+| `processing/` | Intermediate analysis files — gitignored |
+| `results/figs/` | Selected figures — tracked |
+| `docs/slides/` | Slide source (Quarto `.qmd`) and rendered HTML |
+| `docs/draft/` | Draft methods/results source and rendered HTML |
+| `docs/overview.md` | Living project overview |
+| `docs/sessions/` | Per-session AI logs |
 | `docs/methods.md` | Analytical methods applied and planned |
-| `docs/methods/` | PDFs and supplementary method files |
+| `docs/methods/` | Method PDFs and supplementary notes |
+| `envs/` | Conda environment `.yml` specs |
+| `scripts/` | Analysis scripts |
+| `papers/` | Literature index and reading notes |
+| `refs/` | Reference data (e.g., genome files) — gitignored |

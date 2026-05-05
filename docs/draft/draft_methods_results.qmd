@@ -1,0 +1,43 @@
+---
+title: "Draft — Methods & Results"
+subtitle: "Internal draft for circulation"
+author: "Author"
+date: today
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-float: true
+    embed-resources: true
+    fig-align: center
+    fig-width: 8
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+---
+
+> **Status:** Working draft for internal circulation.
+
+---
+
+## Experimental design
+
+Brief description of the dataset, conditions, and replication structure.
+
+## Methods
+
+Outline of analytical methods. Cross-link to `docs/methods.md` and `docs/methods/` for full detail.
+
+## Results
+
+### Result 1
+
+![](../../results/figs/placeholder.png){fig-alt="description"}
+
+### Result 2
+
+## Open questions
+
+-

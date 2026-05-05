@@ -1,4 +1,24 @@
-# Data and large files
+# Raw input data — store externally, never commit
+raw/*
+!raw/.gitkeep
+
+# Pipeline output (e.g., aligners, callers)
+out/*
+!out/.gitkeep
+
+# Intermediate analysis files
+processing/*
+!processing/.gitkeep
+
+# Reference data (genome, indices)
+refs/*
+!refs/.gitkeep
+
+# Old/scratch work
+Archive/
+scratch/
+
+# Sequencing / common large files
 *.fastq
 *.fastq.gz
 *.fq
@@ -13,6 +33,9 @@
 *.bigwig
 *.bw
 *.bigbed
+*.h5ad
+*.loom
+*.zip
 
 # Conda environments (track .yml files, not installed env dirs)
 envs/*/
@@ -24,7 +47,14 @@ __pycache__/
 
 # Quarto
 .quarto/
-slides/*_files/
+docs/slides/*_files/
+docs/slides/presentation.aux
+docs/slides/presentation.log
+docs/slides/presentation.tex
+docs/draft/*_files/
+
+# Claude Code
+.claude/
 
 # Papers — track notes/index but not binary files
 # To version PDFs, use git-lfs: git lfs track "papers/**/*.pdf"
